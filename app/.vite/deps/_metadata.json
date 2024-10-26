@@ -1,0 +1,15 @@
+{
+  "hash": "1d6fb3ca",
+  "configHash": "1bed463b",
+  "lockfileHash": "e3b0c442",
+  "browserHash": "149f0e89",
+  "optimized": {
+    "@tauri-apps/api/core": {
+      "src": "../../node_modules/.deno/@tauri-apps+api@2.0.3/node_modules/@tauri-apps/api/core.js",
+      "file": "@tauri-apps_api_core.js",
+      "fileHash": "f5f584d9",
+      "needsInterop": false
+    }
+  },
+  "chunks": {}
+}

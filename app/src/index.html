@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lap Tracker</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <ui-card>
+    <ui-card-header>
+      <h1 class="card-title">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        Lap Tracker
+      </h1>
+    </ui-card-header>
+
+    <ui-card-content>
+      <div class="space-y-6">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-label">Total Laps</div>
+            <div id="totalLaps" class="stat-value">0</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">Average Time per Lap</div>
+            <div id="avgLapTime" class="stat-value">0:00.0</div>
+          </div>
+        </div>
+
+        <div class="button-group">
+          <button id="startStopButton" class="button button-success">Start</button>
+          <button id="recordButton" class="button button-primary">Record Lap</button>
+          <button id="resetButton" class="button button-outline">Reset</button>
+        </div>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Lap #</th>
+                <th>Time</th>
+                <th>Time Since Last Lap (sec)</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="lapTableBody">
+              <!-- Lap rows will be dynamically inserted here -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </ui-card-content>
+  </ui-card>
+
+  <script type="module" src="./main.ts"></script>
+</body>
+
+</html>
